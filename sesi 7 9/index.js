@@ -16,7 +16,7 @@ function onload(){
                 status = true;
             }
         }
-        if (pesan.toLowerCase() === 'juice' && age <= 17 || pesan.toLowerCase() === 'anggur' && age > 17){
+        if (pesan.toLowerCase() === 'juice' && age <= 17 || age > 17){
             money = prompt('masukkan jumlah uang',0);
             if ((pesan.toLowerCase() === 'juice' && money >= 50000)||(pesan.toLowerCase() === 'anggur' && money >= 300000)){
                 alert (`Anda bisa pesan ${pesan.toLowerCase()}. Sisa uang anda: ${money - (pesan.toLowerCase()==='juice' ? 50000 : 300000) }`);
