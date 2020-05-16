@@ -1,3 +1,7 @@
 const convertToLower = (text = "") => {return text.toLowerCase()}
 
-console.log(convertToLower('INALUM'));
+const onSubmit = (event) => {
+    event.preventDefault();
+    let tulisan = document.getElementById('txtUpper').value;
+    document.getElementById('hasil').innerHTML = convertToLower(tulisan);
+}
