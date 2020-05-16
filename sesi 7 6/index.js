@@ -21,4 +21,3 @@ const onSubmit = (event) => {
     let umurMan = document.getElementById('txtUmurManusia').value;
     document.getElementById('hasil').innerHTML = convertUmurKucing(umurMan);
 }
-}
