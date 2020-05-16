@@ -19,5 +19,5 @@ const convertUmurKucing = (umurManusia) => {
 const onSubmit = (event) => {
     event.preventDefault();
     let umurMan = document.getElementById('txtUmurManusia').value;
-    document.getElementById('hasil').innerHTML = convertUmurKucing(umurMan);
+    document.getElementById('hasil').innerHTML = convertUmurKucing(parseFloat(umurMan,10));
 }
